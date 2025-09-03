@@ -1,4 +1,3 @@
-
 import os
 import pandas as pd
 import fastf1
@@ -90,14 +89,14 @@ for driver in df['Driver'].unique():
     # pega o composto que maximiza a chance de volta boa
     best_comp, best_pred = max(melhores, key=lambda x: x[1])
 
+    strategies = []
     recomendacoes.append((
         driver,
         lap,
         best_comp,
         "Boa" if best_pred else "Ruim",
-        estimativa_pits
+        len(strategies)
     ))
-    strategies = []
 
 # Limiar de perda para sugerir pitstop (em segundos)
 LIMIAR_FRENTE = 1.5

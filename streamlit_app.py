@@ -1,3 +1,4 @@
+
 import os
 import pandas as pd
 import fastf1
@@ -8,8 +9,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # Criar cache
-os.makedirs("/content/f1_cache", exist_ok=True)
-fastf1.Cache.enable_cache('/content/f1_cache')
+cache_dir = os.path.join(os.getcwd(), "f1_cache")
+os.makedirs(cache_dir, exist_ok=True)
+fastf1.Cache.enable_cache('f1_cache')
 
 # Carregar sessão
 session = fastf1.get_session(2024, 'Bahrain', 'R')  # Corrida

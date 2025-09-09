@@ -67,7 +67,8 @@ O modelo foi treinado para classificar voltas em **boas (1)** ou **ruins (0)**.
 ## 5. Resultados
 1. **Predição de boas voltas**:  
    - O modelo conseguiu identificar boas e más voltas com **acurácia de 81,8%**.  
-   - Isso indica que a rede neural conseguiu capturar padrões entre desgaste do pneu, número de voltas e desempenho do piloto.  
+   - Isso indica que a rede neural conseguiu capturar padrões entre desgaste do pneu, número de voltas e desempenho do piloto.
+   - Os resultados variam de acordo com o treinamento e testes do modelo, esse é apenas um exemplo de resultado.
 
 2. **Estratégias de pitstop sugeridas**:  
 
